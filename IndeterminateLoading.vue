@@ -1,5 +1,5 @@
 <template>
-  <span class="loader" :class="loaderClass"></span>
+  <span class="loader" :class="loaderClass" :style="`color: ${colorHash};`"></span>
 </template>
 
 <script>
@@ -9,7 +9,10 @@
     props: {
       isDarkMode: {
         type: Boolean,
-        default: false
+        default: false,
+      },
+      colorHash: {
+        type: String
       }
     },
     computed: {
