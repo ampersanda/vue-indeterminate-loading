@@ -1,0 +1,16 @@
+{
+  "name": "vue-indeterminate-loading",
+  "version": "1.0.0",
+  "description": "Simple Indeterminate Loading",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "loading",
+    "indeterminate"
+  ],
+  "author": "Ampersanda",
+  "license": "ISC"
+}
