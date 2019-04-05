@@ -22,7 +22,6 @@
 
 <style scoped lang="less">
   @import "~ampersanda-lessfiles/less/pseudos";
-  @import "~ampersanda-lessfiles/less/pseudos";
 
   a.btn.btn--loading, button.btn.btn--loading, .loader {
     position: relative;
