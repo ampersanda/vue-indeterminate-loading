@@ -23,7 +23,7 @@
   }
 </script>
 
-<style scoped lang="less">
+<style lang="less">
   @import "~ampersanda-lessfiles/less/pseudos";
 
   // add integration to ampersanda-buttons

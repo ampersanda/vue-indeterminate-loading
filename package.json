@@ -18,6 +18,6 @@
     "less-loader": "^4.1.0"
   },
   "dependencies": {
-    "ampersanda-lessfiles": "^1.0.6"
+    "ampersanda-lessfiles": "github:ampersanda/lessfiles"
   }
 }
