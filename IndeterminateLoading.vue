@@ -5,39 +5,60 @@
 <script>
   // noinspection JSUnusedGlobalSymbols
   export default {
-    name: "IndeterminateLoading",
+    name: 'IndeterminateLoading',
     props: {
       isDarkMode: {
         type: Boolean,
         default: false,
       },
       colorHash: {
-        type: String
-      }
+        type: String,
+      },
     },
     computed: {
       loaderClass() {
-        return this.isDarkMode ? "is--dark" : "";
-      }
-    }
-  }
+        return this.isDarkMode ? 'is--dark' : '';
+      },
+    },
+  };
 </script>
 
 <style lang="less">
-  @import "~ampersanda-lessfiles/less/pseudos";
+  @import '~ampersanda-lessfiles/less/pseudos';
 
   // add integration to ampersanda-buttons
-  a.btn.btn--loading, button.btn.btn--loading, .loader {
+  .btn.btn--loading, .btn.btn--loading, .loader {
     position: relative;
     user-select: none;
 
     color: #fff;
-    .apply-after({ content: ''; -webkit-box-sizing: border-box; box-sizing: border-box; position: absolute; top: 50%; left: 50%; border-top: 2px solid; border-right: 2px solid transparent; border-radius: 50%; animation: spin 0.6s linear infinite; width: 1.4em; height: 1.4em; margin-top: -.7em; margin-left: -.7em; border-top-color: inherit; color: inherit });
+
+    &::after {
+      content: '';
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-top: 2px solid;
+      border-right: 2px solid transparent;
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+      width: 1.4em;
+      height: 1.4em;
+      margin-top: -.7em;
+      margin-left: -.7em;
+      border-top-color: inherit;
+      color: inherit
+    }
 
     &.is--dark {
       color: #9816f4;
 
-      .apply-after({ border-top-color: inherit; color: inherit });
+      &::after {
+        border-top-color: inherit;
+        color: inherit
+      }
     }
   }
 
