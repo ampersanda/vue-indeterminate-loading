@@ -27,7 +27,7 @@
   @import '~ampersanda-lessfiles/less/pseudos';
 
   // add integration to ampersanda-buttons
-  .btn.btn--loading, .btn.btn--loading, .loader {
+  .loader {
     position: relative;
     user-select: none;
 
