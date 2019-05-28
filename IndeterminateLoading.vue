@@ -3,24 +3,24 @@
 </template>
 
 <script>
-  // noinspection JSUnusedGlobalSymbols
-  export default {
-    name: 'IndeterminateLoading',
-    props: {
-      isDarkMode: {
-        type: Boolean,
-        default: false,
-      },
-      colorHash: {
-        type: String,
-      },
-    },
-    computed: {
-      loaderClass() {
-        return this.isDarkMode ? 'is--dark' : '';
-      },
-    },
-  };
+	// noinspection JSUnusedGlobalSymbols
+	export default {
+		name: 'IndeterminateLoading',
+		props: {
+			isDarkMode: {
+				type: Boolean,
+				default: false,
+			},
+			colorHash: {
+				type: String,
+			},
+		},
+		computed: {
+			loaderClass() {
+				return this.isDarkMode ? 'is--dark' : '';
+			},
+		},
+	};
 </script>
 
 <style lang="less">
@@ -32,6 +32,7 @@
     user-select: none;
 
     color: #fff;
+    border-color: #fff;
 
     &::after {
       content: '';
