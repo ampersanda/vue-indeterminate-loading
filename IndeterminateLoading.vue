@@ -72,5 +72,4 @@
       transform: rotateZ(360deg);
     }
   }
-
 </style>
