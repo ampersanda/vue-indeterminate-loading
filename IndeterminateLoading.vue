@@ -1,32 +1,29 @@
 <template>
-  <span class="loader" :class="loaderClass" :style="`color: ${colorHash};`"></span>
+  <span class="loader" :class="loaderClass" :style="`color: ${color};`"></span>
 </template>
 
 <script>
-	// noinspection JSUnusedGlobalSymbols
-	export default {
-		name: 'IndeterminateLoading',
-		props: {
-			isDarkMode: {
-				type: Boolean,
-				default: false,
-			},
-			colorHash: {
-				type: String,
-			},
-		},
-		computed: {
-			loaderClass() {
-				return this.isDarkMode ? 'is--dark' : '';
-			},
-		},
-	};
+// noinspection JSUnusedGlobalSymbols
+export default {
+  name: 'IndeterminateLoading',
+  props: {
+    isDarkMode: {
+      type: Boolean,
+      default: false,
+    },
+    color: {
+      type: String,
+    },
+  },
+  computed: {
+    loaderClass() {
+      return this.isDarkMode ? 'is--dark' : '';
+    },
+  },
+};
 </script>
 
 <style lang="less">
-  @import '~ampersanda-lessfiles/less/pseudos';
-
-  // add integration to ampersanda-buttons
   .btn--loading, .loader {
     position: relative;
     user-select: none;
